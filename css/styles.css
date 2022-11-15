@@ -157,12 +157,17 @@ img {
     background-color: var(--bg-color);
     padding-top: 200px;
     padding-bottom: 280px;
+    background-image: url(../images/webstudio/studio-large-image.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
 }
 .hero-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 
 .hero-title {
     font-weight: 900;
