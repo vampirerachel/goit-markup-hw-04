@@ -90,6 +90,7 @@ img {
 
 .header-contacts:hover {
     color: var(--highlight-color);
+    cursor: pointer;
 }
 
 .navigation-item:not(:last-child) {
@@ -104,6 +105,15 @@ img {
 
 .header-contacts-item:not(:last-child) {
     margin-right: 50px;
+}
+
+.header-contacts-item{
+    display: flex;
+    align-items: center;
+}
+.header-icons{
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .header-logo {
@@ -145,22 +155,22 @@ img {
     margin-left: auto;
     padding-top: 32px;
     padding-bottom: 32px;
+
 }
 
-.header-contacts:hover,
-.header-contacts:focus {
-    color: var(--highlight-color);
-}
+
 
 /* hero section*/
 .hero-section {
     background-color: var(--bg-color);
     padding-top: 200px;
     padding-bottom: 280px;
-    background-image: url(../images/webstudio/studio-large-image.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url(../images/webstudio/studio-large-image.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 50%;
+    background-position: center;
+    background-size: cover;
+
 }
 .hero-container{
     display: flex;
@@ -285,6 +295,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color-secondary);
+    margin-bottom: 16px;
 }
 
 .team-section-images {
@@ -440,17 +451,6 @@ img {
 }
 
 /* SVG */
-.header-icons {
-    margin-right: 10px;
-    fill:var(--text-color-secondary);
-    cursor: pointer;
-    display: block;
-}
-.header-icons:hover,
-.header-icons:focus {
-    fill: var(--highlight-color);
-    cursor: pointer;
-}
 
 .features-icons-list{
 display: flex;
@@ -494,12 +494,12 @@ fill: var(--svg-color);
 .social-icons-list{
 display: flex;
 justify-content: center;
-margin-top: 16px;
+
 }
 .social-icons-item{
-    fill:var(--svg-color);
-    padding: 12px 12px;
+    fill: var(--svg-color);
 }
+
 .facebook{
 
 }
@@ -508,13 +508,16 @@ margin-top: 16px;
 }
 .social-icons-item:hover, 
 .social-icons-item:focus{
-    cursor: pointer;
-    background-color: var(--highlight-color);
-    fill: var(--white-color);
-    border-radius: 50%;
-    height: 44px;
-        width: 44px;
+        cursor: pointer;
+            background-color: var(--highlight-color);
+            fill: var(--white-color);
+            border-radius: 50%;
+            height: 44px;
+            width: 44px;
+
 }
+
+
 
 .footer-list-title {
     display: flex;
