@@ -321,11 +321,16 @@ img {
     margin-top:calc(-1 * var(--card-gap));
     margin-left:calc(-1 * var(--card-gap));
 }
+.portfolio-item:hover{
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .portfolio-item{
     flex-basis:calc(100% /3 - var(--card-gap));
     margin-left: var(--card-gap);
     margin-top: var(--card-gap);
+    cursor: pointer;
 }
 
 .card {
@@ -359,6 +364,8 @@ img {
 .filter-buttons:focus {
     color: var(--button-color);
     background-color: var(--highlight-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
 
 }
 .filter-button-item:not(:last-child){
@@ -501,11 +508,22 @@ margin-top: 16px;
     border-radius: 50%;
     height: 44px;
         width: 44px;
-        
 }
-.footer-icons-list{
-display: flex;
-justify-content: center;
+
+.footer-list-title {
+    display: flex;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    position: relative;
+
+}
+.footer-icons-list {
+    display: flex;
 }
 .footer-icons-item:not(:last-child){
     margin-right: 10px; 
@@ -522,15 +540,13 @@ justify-content: center;
 .footer-icons-item:hover{
     background-color: var(--highlight-color);
 }
-.footer-list-title{
-    color: var(--white-color);
-font-weight: 700px;
-font-size: 14px;
-line-height: calc(16px/14px);
-letter-spacing: 0.03em;
-text-transform: uppercase;
+.footer-positioning{
+    position: relative;
 }
-
-
+.footer-icons-section {
+position: absolute;
+top: 25px;
+right: 678px;
+}
 
 
