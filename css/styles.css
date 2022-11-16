@@ -247,6 +247,19 @@ img {
 .features-item:not(:last-child) {
     margin-right: 30px;
 }
+.features-icons-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-icons-item {
+    border: none;
+    border-radius: 4px;
+    background-color: var(--button-color);
+    padding: 25px 102px;
+    margin-bottom: 30px;
+    max-width: 270px;
+}
 
 /*what we do section*/
 .images-section {
@@ -316,6 +329,40 @@ img {
 
 .team-item:not(:last-child) {
     margin-right: 30px;
+}
+
+/* Team Socials */
+
+.social-icons-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social-icons-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: var(--svg-color);
+}
+
+
+.social-link:hover,
+.social-link:focus {
+    fill: var(--white-color);
+    cursor: pointer;
+    background-color: var(--highlight-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
 }
 
 /*portfolio page*/
@@ -449,22 +496,58 @@ img {
     display: block;
     margin-bottom: 9px;
 }
+.footer-list-title {
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    position: relative;
 
-/* SVG */
-
-.features-icons-list{
-display: flex;
-justify-content: space-between;
-}
-.features-icons-item{
-    border: none;
-    border-radius: 4px;
-    background-color: var(--button-color);
-    padding: 25px 102px;
-    margin-bottom: 30px;
-    max-width: 270px;
 }
 
+.footer-icons-list {
+    display: flex;
+}
+
+.footer-icons-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-icons-item {
+    cursor: pointer;
+    background-color: var(--footer-svg);
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+}
+
+.footer-icons-item:hover {
+    background-color: var(--highlight-color);
+}
+
+.footer-positioning {
+    position: relative;
+}
+
+.footer-icons-section {
+    position: absolute;
+    top: 25px;
+    right: 678px;
+}
+.footer-social-link{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        fill: var(--white-color);
+}
+
+/* Regular-Customers-Section */
 
 .brand-section-title{
     margin-bottom: 50px;
@@ -490,72 +573,6 @@ fill: var(--svg-color);
 }
 .regular-customers-icon-item:not(:last-child){
     margin-right: 30px;
-}
-.social-icons-list{
-display: flex;
-justify-content: center;
-
-}
-.social-icons-item{
-    fill: var(--svg-color);
-}
-
-.facebook{
-
-}
-.social-icons-item:not(:last-child){
-    margin-right: 10px;
-}
-.social-icons-item:hover, 
-.social-icons-item:focus{
-        cursor: pointer;
-            background-color: var(--highlight-color);
-            fill: var(--white-color);
-            border-radius: 50%;
-            height: 44px;
-            width: 44px;
-
-}
-
-
-
-.footer-list-title {
-    display: flex;
-    color: var(--white-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    position: relative;
-
-}
-.footer-icons-list {
-    display: flex;
-}
-.footer-icons-item:not(:last-child){
-    margin-right: 10px; 
-}
-.footer-icons-item{
-    padding: 12px 12px;
-    cursor: pointer;
-    fill: var(--white-color);
-    background-color: var(--footer-svg);
-    border-radius: 50%;
-    height: 44px;
-    width: 44px;
-}
-.footer-icons-item:hover{
-    background-color: var(--highlight-color);
-}
-.footer-positioning{
-    position: relative;
-}
-.footer-icons-section {
-position: absolute;
-top: 25px;
-right: 678px;
 }
 
 
