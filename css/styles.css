@@ -164,7 +164,7 @@ img {
 .hero-section {
     background-color: var(--bg-color);
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
     url(../images/webstudio/studio-large-image.jpg);
     background-repeat: no-repeat;
@@ -247,10 +247,7 @@ img {
 .features-item:not(:last-child) {
     margin-right: 30px;
 }
-.features-icons-list {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .features-icons-item {
     border: none;
@@ -496,6 +493,13 @@ img {
     display: block;
     margin-bottom: 9px;
 }
+.footer-icon-positioning{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 70px;
+    margin-top: 15px;
+}
 .footer-list-title {
     color: var(--white-color);
     font-weight: 700;
@@ -529,14 +533,10 @@ img {
 }
 
 .footer-positioning {
-    position: relative;
+    display: flex;
 }
 
-.footer-icons-section {
-    position: absolute;
-    top: 25px;
-    right: 678px;
-}
+
 .footer-social-link{
         width: 44px;
         height: 44px;
